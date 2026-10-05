@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<body>
+    <button onclick="wLoop()">Click Me</button>
+    <p id="p1"></p>
+    <script>
+        function wLoop()
+        {
+            var a="",i=1,c=true;
+            while (c==true)
+        {
+            a=a + "This is loop number" +i+ "<br>";
+            i++;
+            if(i==10){
+                c=false;
+            }
+        }
+        document.getElementById("p1").innerHTML=a;
+        }
+    </script>
+</body>
+</html>

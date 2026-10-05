@@ -1,0 +1,10 @@
+ul{
+    width:250px;
+    list-style-image:url('marker.png');
+}
+ul.c1{
+    list-style-position:outside;
+}
+ul.c2{
+    list-style-position:inside;
+}

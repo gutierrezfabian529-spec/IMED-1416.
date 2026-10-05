@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<body>
+    <p>Click on the button to create and display two variables.</p>
+    <button onclick="myVariables()">Click me</button>
+    <p id="number"></p>
+    <p id="string"></p>
+    <p id="boolean"></p>
+    <script>
+        function myVariables()
+        {
+            var ntotalAmount=1000;
+            var sService="Accountancy";
+            document.getElementById("number").innerHTML="Amount:"+ntotalAmount;
+            document.getElementById("string").innerHTML="Service:"+sService;
+            document.getElementById("boolean").innerHTML=(ntotalAmount == 1000);
+        }
+    </script>
+</body>
+</html>

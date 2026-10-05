@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<body>
+    <h3> Price Checker</h3>
+    <button onclick="checkPrice()">Click Me</button>
+    <p id="price"></p>
+    <script>
+        function checkPrice(){
+            var sjacketColor = "Black";
+            var result;
+            switch (sjacketColor){
+                case"Black":
+                result = "Price $300";
+                break;
+                case "Brown":
+                    result = "Price $200";
+                    break;
+                case "Green":
+                    result = "Price $100";
+                    break;
+                    default:
+                        result ="No color selected";
+
+            }
+            document.getElementById("price").innerHTML=sjacketColor+" Jacket:"+result;
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Using JavaScript with HTML Form</title>
+<script>
+    function showData(){
+        oPopWin=window.open('','Window1','toolbar=no,status=no,width=300,height=100')
+        message= "<ul><li><b>Name:</b>" +document.contactform.name.value;
+        message +="<li><b>E-mail:</b>" +document.contactform.email.value;
+        message +="<li><b>Cell No.:</b>" +document.contactform.mobile.value +"</ul>";
+        oPopWin.document.write(message);
+    }
+</script>
+</head>
+<body>
+<form name="contactform">
+    <fieldset>
+        <legend>Contact information</legend>
+        <label>Name:<br>
+            <input type="text" name="name"></label><br>
+            <label>Email:<br>
+                <input type="text" name="email"></label><br>
+            <label>Cell No.:<br>
+                <input type="text" name="mobile"></label>
+    </fieldset>
+    <p><input type="BUTTON" value="Show Data" onclick="showData();"></p>
+</form>
+</body>
+</html>

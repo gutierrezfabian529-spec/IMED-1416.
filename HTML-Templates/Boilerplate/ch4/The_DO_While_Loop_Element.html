@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<body>
+    <button onclick="dwLoop()">Click Me</button>
+    <p id="p1"></p>
+    <script type="text/javascript">
+        function dwLoop()
+        {
+            var a="",i=1,c=false;
+            do
+            {
+                a=a + "This is loop number" +i+ "<br>";
+                i++;
+                if(i== 10){
+                    c=false;
+                }
+            }
+            while(c==true)
+            document.getElementById("p1").innerHTML=a;
+        }
+    </script>
+</body>
+</html>

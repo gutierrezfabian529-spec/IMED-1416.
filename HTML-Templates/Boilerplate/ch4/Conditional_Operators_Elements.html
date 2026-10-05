@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<body>
+    <h3>Check Stock Level</h3>
+    <button onclick="StockLevel()">Click Me</button>
+    <p id="stockStatus"></p>
+    <script>
+        function StockLevel()
+        {
+            var stock=5;
+            var reorder=10;
+            if(stock<reorder){
+                Alert="Low";
+        }
+            else if(stock < 100)
+        {
+            Alert="Good";
+        }
+        else
+        {
+            Alert="High";
+        }
+        document.getElementById("stockStatus").innerHTML=Alert;
+        }
+    </script>
+</body>
+</html>
