@@ -1,3 +1,28 @@
+#para1
+{
+    text-align:center;
+    color:red;
+}
+.center
+{
+    text-align:center;
+}
+ul{
+    list-style-image:url('marker.png');
+}
+li{
+    margin: 15px 0px 0px 0px;
+}
+ul{
+    width:250px;
+    list-style-image:url('marker.png');
+}
+ul.c1{
+    list-style-position:outside;
+}
+ul.c2{
+    list-style-position:inside;
+}
 dl {
     margin: 0;
     padding: 24px 0 0 0;
